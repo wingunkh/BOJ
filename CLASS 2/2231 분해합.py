@@ -1,13 +1,9 @@
 n = int(input())
 
-for i in range(n):
-    i = str(i)
-    sum = 0
-    
-    for j in i:
-        sum += int(j)
+for i in range(1, n+1):
+    i_sum = sum(map(int, str(i)))
         
-    if int(i) + sum == n:
+    if i + i_sum  == n:
         print(i)
         break
 else:
