@@ -4,7 +4,7 @@ input = sys.stdin.readline
 n = int(input())
 stack = []
 
-for i in range(n):
+for _ in range(n):
     cmd = input().split()    
 
     if cmd[0] == "push":
