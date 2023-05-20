@@ -16,6 +16,7 @@ def binary_search(a: list, key: int) -> None:
 
         else:
             pr = pc - 1
+            
         if pl > pr:
             return 0
 
@@ -32,6 +33,5 @@ for i in card:
     else:
         dic[i] = 1
         
-
 for i in target:
     print(binary_search(card, i), end = ' ')
