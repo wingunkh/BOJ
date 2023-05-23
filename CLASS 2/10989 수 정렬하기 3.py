@@ -4,7 +4,6 @@ input = sys.stdin.readline
 n = int(input())
 array = [0] * 10001
 
-
 for _ in range(n):
     array[int(input())] += 1
 
