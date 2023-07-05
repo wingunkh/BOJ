@@ -22,7 +22,7 @@ T = int(input())  # 테스트 케이스 수
 
 for _ in range(T):
     M, N, K = map(int, input().split())
-    field = [[0] * M for _ in range(N)]
+    field = [[0] * M for _ in range(N)] # M = 열의 길이, N = 행의 길이
 
     for _ in range(K):
         X, Y = map(int, input().split())
