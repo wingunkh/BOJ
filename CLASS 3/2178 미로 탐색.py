@@ -23,6 +23,5 @@ def BFS(row, col):
 
 N, M = map(int, input().split())
 maze = [list(map(int, input().strip())) for _ in range(N)]
-cnt = 0
 
 print(BFS(0,0))
