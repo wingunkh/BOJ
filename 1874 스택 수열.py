@@ -1,23 +1,21 @@
 n = int(input())
-a = []
 stack = []
-answer = []
+result = []
 next = 1
 
-for _ in range(n):
-    a.append(int(input()))
+for i in range(n):
+    target = int(input())
 
-for i in a:
-    while next <= i:
+    while next <= target:
         stack.append(next)
-        answer.append('+')
+        result.append('+')
         next += 1
-        
+
     data = stack.pop()
-    if data == i:
-        answer.append('-')
-    else:
+    result.append('-')
+
+    if data != target:
         print("NO")
         break
 else:
-    print(*answer, sep = '\n')
+    print(*result, sep = "\n")
