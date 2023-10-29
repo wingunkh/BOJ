@@ -1,6 +1,5 @@
 n, m = map(int, input().split())
 a = [i for i in range(int(m ** 0.5)+1)]
-a[0] = 0
 a[1] = 0
 result = 0
 
