@@ -28,7 +28,6 @@ def bfs(v):
 n, m, v = map(int, input().split())
 a = [[] for _ in range(n+1)]
 
-
 for _ in range(m):
     s, e = map(int, input().split())
     a[s].append(e)
