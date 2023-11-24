@@ -4,7 +4,7 @@ input = sys.stdin.readline
 
 def find(a):
     if a == parent[a]:
-        return a
+        return parent[a]
     else:
         parent[a] = find(parent[a])
         return parent[a]
@@ -14,7 +14,7 @@ def union(a, b):
     b = find(b)
 
     if a != b:
-        parent[b] = a
+        parent[a] = b
 
 n, m = map(int, input().split())
 parent = [i for i in range(n+1)]
