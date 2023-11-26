@@ -14,7 +14,7 @@ def union(a, b):
     b = find(b)
 
     if a != b:
-        parent[a] = b
+        parent[b] = a
 
 n, m = map(int, input().split())
 parent = [i for i in range(n+1)]
