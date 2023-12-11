@@ -3,6 +3,7 @@ def dfs(index, depth):
         for i in range(len(a)):
             if visited[i]:
                 print(a[i], end = ' ')
+                
         print()
         return
     
